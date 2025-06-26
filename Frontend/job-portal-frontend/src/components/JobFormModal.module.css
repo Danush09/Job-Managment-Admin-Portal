@@ -1,0 +1,104 @@
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.row {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 16px;
+}
+
+.fieldCol {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.fieldColFull {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 1rem;
+    background: #f8fbff;
+    outline: none;
+    transition: border 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 1.5px solid #a259ff;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.92rem;
+    margin-top: 2px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    padding-bottom: 8px;
+}
+
+.draftBtn {
+    background: #fff;
+    color: #222;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border 0.2s;
+}
+
+.draftBtn:hover {
+    border: 2px solid #a259ff;
+}
+
+.publishBtn {
+    background: #0096ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 150, 255, 0.08);
+    transition: background 0.2s;
+}
+
+.publishBtn:hover {
+    background: #007be6;
+}
+
+/* Ensure modal box has enough padding and scrolls if content is too tall */
+:global(.sc-bcXHqe) {
+    /* styled-components ModalBox selector */
+    padding-bottom: 32px !important;
+    overflow-y: auto;
+    max-height: 90vh;
+}
