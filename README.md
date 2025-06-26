@@ -27,3 +27,49 @@ Built with **React.js** (frontend), **Node.js/Express** (backend), and **MongoDB
 - **Frontend:** React.js, React Hook Form, styled-components, CSS Modules, Axios, react-icons, MUI Slider
 - **Backend:** Node.js, Express.js, MongoDB, Mongoose, CORS
 - **Other:** Modern CSS, Responsive Design
+
+- ## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/job-management-portal.git
+cd job-management-portal
+```
+
+### 2. Install dependencies
+
+#### Backend
+```bash
+cd Backend
+npm install
+```
+
+#### Frontend
+```bash
+cd ../Frontend/job-portal-frontend
+npm install
+```
+
+### 3. Set up environment variables
+
+Create a `.env` file in the `Backend` directory:
+```
+MONGODB_URI=mongodb://localhost:27017/jobportal
+PORT=5000
+```
+
+### 4. Run the application
+
+#### Start the backend server
+```bash
+cd Backend
+npm start
+```
+
+#### Start the frontend
+```bash
+cd ../Frontend/job-portal-frontend
+npm start
+```
+
