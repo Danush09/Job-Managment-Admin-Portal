@@ -15,4 +15,4 @@ const jobSchema = new mongoose.Schema({
     maxExperience: { type: Number },
 });
 
-module.exports = mongoose.model('Job', jobSchema); 
+module.exports = mongoose.model('Job', jobSchema);

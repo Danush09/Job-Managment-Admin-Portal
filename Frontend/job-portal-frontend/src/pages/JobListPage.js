@@ -16,7 +16,10 @@ export default function JobListPage({ setRefreshJobsRef }) {
     const refreshJobs = useCallback(() => {
         setLoading(true);
         API.get('/jobs')
-            .then(res => setJobs(res.data))
+            .then(res => {
+                console.log('Jobs from API:', res.data); // Add this line
+                setJobs(res.data);
+            })
             .catch(() => setJobs([]))
             .finally(() => setLoading(false));
     }, []);

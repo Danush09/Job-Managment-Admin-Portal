@@ -3,6 +3,37 @@ import styles from './FilterBar.module.css';
 import { FiSearch, FiMapPin, FiUser } from 'react-icons/fi';
 import Slider from '@mui/material/Slider';
 
+const CustomSlider = (props) => (
+    <Slider
+        {...props}
+        sx={{
+            color: '#111',
+            height: 6,
+            padding: '16px 0',
+            '& .MuiSlider-thumb': {
+                height: 22,
+                width: 22,
+                backgroundColor: '#fff',
+                border: '8px solid #111',
+                boxShadow: 'none',
+                '&:focus, &:hover, &.Mui-active': {
+                    boxShadow: 'none',
+                },
+            },
+            '& .MuiSlider-rail': {
+                opacity: 1,
+                backgroundColor: '#d3cfcf',
+                height: 6,
+            },
+            '& .MuiSlider-track': {
+                backgroundColor: '#111',
+                height: 2,
+                border: 'none',
+            },
+        }}
+    />
+);
+
 export default function FilterBar({
     role,
     onRoleChange,
@@ -67,31 +98,13 @@ export default function FilterBar({
                         ₹{salary[0] / 1000}k - ₹{salary[1] / 1000}k
                     </span>
                 </div>
-                <Slider
+                <CustomSlider
                     value={salary}
                     onChange={handleSlider}
                     min={10000}
                     max={800000}
                     step={10000}
                     valueLabelDisplay="off"
-                    sx={{
-                        color: '#111',
-                        height: 4,
-                        '& .MuiSlider-thumb': {
-                            width: 28,
-                            height: 28,
-                            backgroundColor: '#000',
-                            border: '4px solid #fff',
-                            boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
-                        },
-                        '& .MuiSlider-rail': {
-                            opacity: 1,
-                            backgroundColor: '#e0e0e0',
-                        },
-                        '& .MuiSlider-track': {
-                            backgroundColor: '#111',
-                        },
-                    }}
                 />
             </div>
         </div>

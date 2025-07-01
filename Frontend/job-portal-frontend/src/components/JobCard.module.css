@@ -1,76 +1,95 @@
 .card {
-    background: #f8fbff;
-    border-radius: 12px;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
-    padding: 26px 22px 20px 22px;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.07);
+    padding: 32px 28px 24px 28px;
     margin: 0;
-    width: 316px;
+    width: 350px;
     min-width: 316px;
-    max-width: 316px;
-    height: 360px;
+    max-width: 350px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
     box-sizing: border-box;
+    position: relative;
 }
 
 .header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
+    justify-content: space-between;
 }
 
-.logo {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+.logoWrapper {
     background: #fff;
-    object-fit: contain;
-    margin-right: 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+.logoImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: transparent;
+    display: block;
+    margin: 10px;
+    top: auto
 }
 
 .timeAgo {
-    margin-left: auto;
-    background: #e6f0ff;
-    color: #0096ff;
-    border-radius: 8px;
-    padding: 4px 14px;
-    font-size: 1rem;
+    background: #B0D9FF;
+    color: #222;
+    border-radius: 12px;
+    padding: 8px 22px;
+    font-size: 1.1rem;
     font-weight: 500;
+    margin-left: auto;
+    margin-top: 4px;
+    box-shadow: 0 2px 8px rgba(0, 150, 255, 0.08);
 }
 
 .title {
-    font-size: 1.18rem;
+    font-size: 1.35rem;
     font-weight: 700;
-    margin: 0 0 10px 0;
+    margin: 0 0 18px 0;
+    color: #111;
 }
 
 .meta {
     display: flex;
-    gap: 12px;
+    gap: 18px;
     color: #555;
-    font-size: 1.02rem;
-    margin-bottom: 14px;
+    font-size: 1.08rem;
+    margin-bottom: 18px;
     font-weight: 500;
     align-items: center;
 }
 
 .metaIcon {
     vertical-align: middle;
-    margin-right: 3px;
-    font-size: 1.1em;
+    margin-right: 5px;
+    font-size: 1.18em;
 }
 
 .descList {
-    margin: 0 0 18px 0;
-    padding: 0 12px 0 18px;
+    margin: 0 0 24px 0;
+    padding-left: 18px;
     color: #444;
-    font-size: 1rem;
+    font-family: 'Satoshi Variable', 'Satoshi', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0;
     height: 48px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -86,15 +105,15 @@
 .applyButton,
 button {
     width: 100%;
-    font-size: 1.08rem;
+    font-size: 1.15rem;
     font-weight: 700;
-    border-radius: 10px;
-    margin-top: 12px;
-    padding: 13px 0;
-    background: #0096ff;
+    border-radius: 12px;
+    margin-top: auto;
+    padding: 16px 0;
+    background: #00aaff;
     color: #fff;
     border: none;
-    box-shadow: 0 2px 8px rgba(0, 150, 255, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 150, 255, 0.12);
     transition: background 0.2s;
     margin-bottom: 0;
     flex-grow: 0;
@@ -102,5 +121,5 @@ button {
 
 .applyButton:hover,
 button:hover {
-    background: #007be6;
+    background: #0096ff;
 }

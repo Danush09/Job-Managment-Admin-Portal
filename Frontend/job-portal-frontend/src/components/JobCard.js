@@ -41,7 +41,11 @@ export default function JobCard({ job }) {
     return (
         <div className={styles.card}>
             <div className={styles.header}>
-                <img src={job.companyLogo} alt={job.companyName} className={styles.logo} />
+                <div className={styles.logoWrapper}>
+                    <div className={styles.logoCircle}>
+                        <img src={job.companyLogo} alt={job.companyName} className={styles.logoImg} />
+                    </div>
+                </div>
                 <span className={styles.timeAgo}>{getTimeAgo(job.createdAt)}</span>
             </div>
             <h3 className={styles.title}>{job.jobTitle}</h3>
